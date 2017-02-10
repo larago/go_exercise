@@ -19,7 +19,7 @@ func main() {
 
 	value, isPresent = map1["Paris"]
 	fmt.Printf("Is \"Paris\" in map1: ?:%t\n", isPresent)
-	fmt.Printf("Value is: %s\n", value)
+	fmt.Printf("Value is: %d\n", value)
 
 	delete(map1, "Washington")
 	value, isPresent = map1["Washington"]
