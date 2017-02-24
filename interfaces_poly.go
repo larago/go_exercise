@@ -1,6 +1,9 @@
 package main 
 
-import "fmt"
+import (
+    "fmt"
+    "reflect"
+)
 
 type Shaper interface {
     Area() float32
@@ -26,6 +29,8 @@ func main() {
     r := Rectangle{5, 3}
     q := &Square{5}
     shapes := []Shaper{r, q}
+    itemType := reflect.TypeOf(shapes[0])
+    fmt.Println(itemType)
     fmt.Println("Looping through shapes for area...")
     for n, _ := range shapes {
         fmt.Println("Shape details: ", shapes[n])
