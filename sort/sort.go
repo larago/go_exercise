@@ -25,3 +25,7 @@ func IsSorted(data Sorter) bool {
 	}
 	return true
 }
+
+type IntArray []int
+
+func (p IntArray) Len() int { return len(p) }
