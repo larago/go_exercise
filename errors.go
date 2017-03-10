@@ -28,9 +28,9 @@ func main() {
 	}
 }
 
-func Sqrt(f float64) (float64, error) {
+func Sqrt(f float64) (float64, string) {
 	if f < 0 {
-		return 0, error
+		return 0, 
 	} else {
 		return math.Sqrt(f), nil
 	}
